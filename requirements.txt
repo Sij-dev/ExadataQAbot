@@ -1,0 +1,7 @@
+streamlit
+streamlit_chat
+openai
+python-dotenv
+langchain
+pinecone-client
+tiktoken
