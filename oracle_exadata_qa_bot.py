@@ -5,7 +5,7 @@ import openai_util
 
 
 st.set_page_config(page_title="OracleExaData-QA-bot", page_icon=":robot:")
-st.header("Ask your Question about installation, configuration and software of Oracle Exadata ")
+st.header("Ask your question about Oracle Exadata installation, configuration and maintenance")
 st.markdown("##### based on 'Oracle Admin guides (installaion, configuration and maintenance guide'")
 st.divider()
 
@@ -64,6 +64,7 @@ else:
         for i in range(len(st.session_state['generated'])-1, -1, -1):
             message(st.session_state["generated"][i], key=str(i))
             message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
+     
 
 # with st.expander("Show Messages"):
 #     st.write(st.session_state['messages'])
