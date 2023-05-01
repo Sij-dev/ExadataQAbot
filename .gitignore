@@ -5,4 +5,7 @@ __pycache__
 # Enviroment variable
 .env
 
+# jupyter notebook
+*.ipynb
+
 
