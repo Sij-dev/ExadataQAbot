@@ -5,7 +5,7 @@ import openai_util
 
 
 st.set_page_config(page_title="OracleExaData-QA-bot", page_icon=":robot:")
-st.header("Ask your question about Oracle Exadata installation, configuration and maintenance")
+st.header(" Oracle Exadata Knowledge Bot")
 st.markdown("##### based on 'Oracle Admin guides (installaion, configuration and maintenance guide'")
 st.divider()
 
@@ -41,7 +41,7 @@ else:
         st.session_state['past'] = []
         
 
-    query = st.text_input("Ask your question about consciousness,destiny,freedom,spirtual anatomy etc.: ", key="input")
+    query = st.text_input("Ask your question about Oracle Exadata installation, configuration and maintenance : ", key="input")
     #print(query)
 
     if 'messages' not in st.session_state:
